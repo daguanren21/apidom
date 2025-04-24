@@ -8,7 +8,7 @@
   },
   "type": "module",
   "sideEffects": [
-    "./dist/lexical-analysis/browser-patch.mjs",
+    "./dist/lexical-analysis/browser-patch.js",
     "./dist/lexical-analysis/browser-patch.cjs"
   ],
   "unpkg": "./dist/apidom-parser-apdater-yaml-1-2.browser.min.js",
@@ -26,7 +26,7 @@
   },
   "types": "./dist/apidom-parser-adapter-yaml-1-2.d.ts",
   "scripts": {
-    "build": "npm run build:wasm && npm run build:wasm:copy && tsup",
+    "build": "npm run build:wasm && npm run build:wasm:copy && tsup && api-extractor run -l -c ./config/api-extractor/api-extractor.json && npm run build:umd:browser",
     "build:umd:browser": "cross-env BABEL_ENV=browser webpack --config config/webpack/browser.config.js --progress",
     "build:wasm": "node ../../scripts/file-exists.js ../../node_modules/@tree-sitter-grammars/tree-sitter-yaml/tree-sitter-yaml.wasm && exit 0 || cd ../../node_modules/@tree-sitter-grammars/tree-sitter-yaml && tree-sitter generate ./grammar.js && tree-sitter build --wasm && node-gyp rebuild",
     "build:wasm:copy": "copyfiles -u 5 ../../node_modules/@tree-sitter-grammars/tree-sitter-yaml/tree-sitter-yaml.wasm wasm",

@@ -8,7 +8,7 @@
   },
   "type": "module",
   "sideEffects": [
-    "./dist/refractor/registration.mjs",
+    "./dist/refractor/registration.js",
     "./src/refractor/registration.cjs"
   ],
   "unpkg": "./dist/apidom-core.browser.min.js",

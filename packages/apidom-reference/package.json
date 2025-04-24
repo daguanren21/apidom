@@ -8,205 +8,205 @@
   },
   "type": "module",
   "sideEffects": [
-    "./dist/configuration/saturated.mjs",
+    "./dist/configuration/saturated.js",
     "./dist/configuration/saturated.cjs"
   ],
   "unpkg": "./dist/apidom-reference.browser.min.js",
   "browser": {
     "./dist/parse/parsers/binary/index-node.cjs": "./dist/parse/parsers/binary/index-browser.cjs",
     "./dist/resolve/resolvers/file/index-node.cjs": "./dist/resolve/resolvers/file/index-browser.cjs",
-    "./dist/parse/parsers/binary/index-node.mjs": "./dist/parse/parsers/binary/index-browser.mjs",
-    "./dist/resolve/resolvers/file/index-node.mjs": "./dist/resolve/resolvers/file/index-browser.mjs"
+    "./dist/parse/parsers/binary/index-node.js": "./dist/parse/parsers/binary/index-browser.js",
+    "./dist/resolve/resolvers/file/index-node.js": "./dist/resolve/resolvers/file/index-browser.js"
   },
   "main": "./dist/configuration/saturated.cjs",
   "types": "./dist/apidom-reference.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/configuration/saturated.mjs",
+      "import": "./dist/configuration/saturated.js",
       "require": "./dist/configuration/saturated.cjs",
       "types": "./dist/apidom-reference.d.ts"
     },
     "./configuration/saturated": {
-      "import": "./dist/configuration/saturated.mjs",
+      "import": "./dist/configuration/saturated.js",
       "require": "./dist/configuration/saturated.cjs",
       "types": "./dist/apidom-reference.d.ts"
     },
     "./configuration/empty": {
-      "import": "./dist/configuration/empty.mjs",
+      "import": "./dist/configuration/empty.js",
       "require": "./dist/configuration/empty.cjs",
       "types": "./dist/apidom-reference.d.ts"
     },
     "./resolve/resolvers/file": {
       "browser": {
-        "import": "./dist/resolve/resolvers/file/index-browser.mjs",
+        "import": "./dist/resolve/resolvers/file/index-browser.js",
         "require": "./dist/resolve/resolvers/file/index-browser.cjs",
         "types": "./dist/resolve/resolvers/file/index-browser.d.ts"
       },
       "default": {
-        "import": "./dist/resolve/resolvers/file/index-node.mjs",
+        "import": "./dist/resolve/resolvers/file/index-node.js",
         "require": "./dist/resolve/resolvers/file/index-node.cjs",
         "types": "./dist/resolve/resolvers/file/index-node.d.ts"
       }
     },
     "./resolve/resolvers/http-axios": {
-      "import": "./dist/resolve/resolvers/http-axios/index.mjs",
+      "import": "./dist/resolve/resolvers/http-axios/index.js",
       "require": "./dist/resolve/resolvers/http-axios/index.cjs",
       "types": "./dist/resolve/resolvers/http-axios/index.d.ts"
     },
     "./resolve/strategies/apidom": {
-      "import": "./dist/resolve/strategies/apidom/index.mjs",
+      "import": "./dist/resolve/strategies/apidom/index.js",
       "require": "./dist/resolve/strategies/apidom/index.cjs",
       "types": "./dist/resolve/strategies/apidom/index.d.ts"
     },
     "./resolve/strategies/asyncapi-2": {
-      "import": "./dist/resolve/strategies/asyncapi-2/index.mjs",
+      "import": "./dist/resolve/strategies/asyncapi-2/index.js",
       "require": "./dist/resolve/strategies/asyncapi-2/index.cjs",
       "types": "./dist/resolve/strategies/asyncapi-2/index.d.ts"
     },
     "./resolve/strategies/openapi-2": {
-      "import": "./dist/resolve/strategies/openapi-2/index.mjs",
+      "import": "./dist/resolve/strategies/openapi-2/index.js",
       "require": "./dist/resolve/strategies/openapi-2/index.cjs",
       "types": "./dist/resolve/strategies/openapi-2/index.d.ts"
     },
     "./resolve/strategies/openapi-3-0": {
-      "import": "./dist/resolve/strategies/openapi-3-0/index.mjs",
+      "import": "./dist/resolve/strategies/openapi-3-0/index.js",
       "require": "./dist/resolve/strategies/openapi-3-0/index.cjs",
       "types": "./dist/resolve/strategies/openapi-3-0/index.d.ts"
     },
     "./resolve/strategies/openapi-3-1": {
-      "import": "./dist/resolve/strategies/openapi-3-1/index.mjs",
+      "import": "./dist/resolve/strategies/openapi-3-1/index.js",
       "require": "./dist/resolve/strategies/openapi-3-1/index.cjs",
       "types": "./dist/resolve/strategies/openapi-3-1/index.d.ts"
     },
     "./parse/parsers/api-design-systems-json": {
-      "import": "./dist/parse/parsers/api-design-systems-json/index.mjs",
+      "import": "./dist/parse/parsers/api-design-systems-json/index.js",
       "require": "./dist/parse/parsers/api-design-systems-json/index.cjs",
       "types": "./dist/parse/parsers/api-design-systems-json/index.d.ts"
     },
     "./parse/parsers/api-design-systems-yaml": {
-      "import": "./dist/parse/parsers/api-design-systems-yaml/index.mjs",
+      "import": "./dist/parse/parsers/api-design-systems-yaml/index.js",
       "require": "./dist/parse/parsers/api-design-systems-yaml/index.cjs",
       "types": "./dist/parse/parsers/api-design-systems-yaml/index.d.ts"
     },
     "./parse/parsers/asyncapi-json-2": {
-      "import": "./dist/parse/parsers/asyncapi-json-2/index.mjs",
+      "import": "./dist/parse/parsers/asyncapi-json-2/index.js",
       "require": "./dist/parse/parsers/asyncapi-json-2/index.cjs",
       "types": "./dist/parse/parsers/asyncapi-json-2/index.d.ts"
     },
     "./parse/parsers/asyncapi-yaml-2": {
-      "import": "./dist/parse/parsers/asyncapi-yaml-2/index.mjs",
+      "import": "./dist/parse/parsers/asyncapi-yaml-2/index.js",
       "require": "./dist/parse/parsers/asyncapi-yaml-2/index.cjs",
       "types": "./dist/parse/parsers/asyncapi-yaml-2/index.d.ts"
     },
     "./parse/parsers/arazzo-json-1": {
-      "import": "./dist/parse/parsers/arazzo-json-1/index.mjs",
+      "import": "./dist/parse/parsers/arazzo-json-1/index.js",
       "require": "./dist/parse/parsers/arazzo-json-1/index.cjs",
       "types": "./dist/parse/parsers/arazzo-json-1/index.d.ts"
     },
     "./parse/parsers/arazzo-yaml-1": {
-      "import": "./dist/parse/parsers/arazzo-yaml-1/index.mjs",
+      "import": "./dist/parse/parsers/arazzo-yaml-1/index.js",
       "require": "./dist/parse/parsers/arazzo-yaml-1/index.cjs",
       "types": "./dist/parse/parsers/arazzo-yaml-1/index.d.ts"
     },
     "./parse/parsers/apidom-json": {
-      "import": "./dist/parse/parsers/apidom-json/index.mjs",
+      "import": "./dist/parse/parsers/apidom-json/index.js",
       "require": "./dist/parse/parsers/apidom-json/index.cjs",
       "types": "./dist/parse/parsers/apidom-json/index.d.ts"
     },
     "./parse/parsers/binary": {
       "browser": {
-        "import": "./dist/parse/parsers/binary/index-browser.mjs",
+        "import": "./dist/parse/parsers/binary/index-browser.js",
         "require": "./dist/parse/parsers/binary/index-browser.cjs",
         "types": "./dist/parse/parsers/binary/index-browser.d.ts"
       },
       "default": {
-        "import": "./dist/parse/parsers/binary/index-node.mjs",
+        "import": "./dist/parse/parsers/binary/index-node.js",
         "require": "./dist/parse/parsers/binary/index-node.cjs",
         "types": "./dist/parse/parsers/binary/index-node.d.ts"
       }
     },
     "./parse/parsers/json": {
-      "import": "./dist/parse/parsers/json/index.mjs",
+      "import": "./dist/parse/parsers/json/index.js",
       "require": "./dist/parse/parsers/json/index.cjs",
       "types": "./dist/parse/parsers/json/index.d.ts"
     },
     "./parse/parsers/openapi-json-2": {
-      "import": "./dist/parse/parsers/openapi-json-2/index.mjs",
+      "import": "./dist/parse/parsers/openapi-json-2/index.js",
       "require": "./dist/parse/parsers/openapi-json-2/index.cjs",
       "types": "./dist/parse/parsers/openapi-json-2/index.d.ts"
     },
     "./parse/parsers/openapi-yaml-2": {
-      "import": "./dist/parse/parsers/openapi-yaml-2/index.mjs",
+      "import": "./dist/parse/parsers/openapi-yaml-2/index.js",
       "require": "./dist/parse/parsers/openapi-yaml-2/index.cjs",
       "types": "./dist/parse/parsers/openapi-yaml-2/index.d.ts"
     },
     "./parse/parsers/openapi-json-3-0": {
-      "import": "./dist/parse/parsers/openapi-json-3-0/index.mjs",
+      "import": "./dist/parse/parsers/openapi-json-3-0/index.js",
       "require": "./dist/parse/parsers/openapi-json-3-0/index.cjs",
       "types": "./dist/parse/parsers/openapi-json-3-0/index.d.ts"
     },
     "./parse/parsers/openapi-json-3-1": {
-      "import": "./dist/parse/parsers/openapi-json-3-1/index.mjs",
+      "import": "./dist/parse/parsers/openapi-json-3-1/index.js",
       "require": "./dist/parse/parsers/openapi-json-3-1/index.cjs",
       "types": "./dist/parse/parsers/openapi-json-3-1/index.d.ts"
     },
     "./parse/parsers/openapi-yaml-3-0": {
-      "import": "./dist/parse/parsers/openapi-yaml-3-0/index.mjs",
+      "import": "./dist/parse/parsers/openapi-yaml-3-0/index.js",
       "require": "./dist/parse/parsers/openapi-yaml-3-0/index.cjs",
       "types": "./dist/parse/parsers/openapi-yaml-3-0/index.d.ts"
     },
     "./parse/parsers/openapi-yaml-3-1": {
-      "import": "./dist/parse/parsers/openapi-yaml-3-1/index.mjs",
+      "import": "./dist/parse/parsers/openapi-yaml-3-1/index.js",
       "require": "./dist/parse/parsers/openapi-yaml-3-1/index.cjs",
       "types": "./dist/parse/parsers/openapi-yaml-3-1/index.d.ts"
     },
     "./parse/parsers/yaml-1-2": {
-      "import": "./dist/parse/parsers/yaml-1-2/index.mjs",
+      "import": "./dist/parse/parsers/yaml-1-2/index.js",
       "require": "./dist/parse/parsers/yaml-1-2/index.cjs",
       "types": "./dist/parse/parsers/yaml-1-2/index.d.ts"
     },
     "./dereference/strategies/apidom": {
-      "import": "./dist/dereference/strategies/apidom/index.mjs",
+      "import": "./dist/dereference/strategies/apidom/index.js",
       "require": "./dist/dereference/strategies/apidom/index.cjs",
       "types": "./dist/dereference/strategies/apidom/index.d.ts"
     },
     "./dereference/strategies/apidom/selectors/element-id": {
-      "import": "./dist/dereference/strategies/apidom/selectors/element-id.mjs",
+      "import": "./dist/dereference/strategies/apidom/selectors/element-id.js",
       "require": "./dist/dereference/strategies/apidom/selectors/element-id.cjs",
       "types": "./dist/dereference/strategies/apidom/selectors/element-id.d.ts"
     },
     "./dereference/strategies/asyncapi-2": {
-      "import": "./dist/dereference/strategies/asyncapi-2/index.mjs",
+      "import": "./dist/dereference/strategies/asyncapi-2/index.js",
       "require": "./dist/dereference/strategies/asyncapi-2/index.cjs",
       "types": "./dist/dereference/strategies/asyncapi-2/index.d.ts"
     },
     "./dereference/strategies/openapi-2": {
-      "import": "./dist/dereference/strategies/openapi-2/index.mjs",
+      "import": "./dist/dereference/strategies/openapi-2/index.js",
       "require": "./dist/dereference/strategies/openapi-2/index.cjs",
       "types": "./dist/dereference/strategies/openapi-2/index.d.ts"
     },
     "./dereference/strategies/openapi-3-0": {
-      "import": "./dist/dereference/strategies/openapi-3-0/index.mjs",
+      "import": "./dist/dereference/strategies/openapi-3-0/index.js",
       "require": "./dist/dereference/strategies/openapi-3-0/index.cjs",
       "types": "./dist/dereference/strategies/openapi-3-0/index.d.ts"
     },
     "./dereference/strategies/openapi-3-1": {
-      "import": "./dist/dereference/strategies/openapi-3-1/index.mjs",
+      "import": "./dist/dereference/strategies/openapi-3-1/index.js",
       "require": "./dist/dereference/strategies/openapi-3-1/index.cjs",
       "types": "./dist/dereference/strategies/openapi-3-1/index.d.ts"
     },
     "./dereference/strategies/openapi-3-1/selectors/$anchor": {
-      "import": "./dist/dereference/strategies/openapi-3-1/selectors/$anchor.mjs",
+      "import": "./dist/dereference/strategies/openapi-3-1/selectors/$anchor.js",
       "require": "./dist/dereference/strategies/openapi-3-1/selectors/$anchor.cjs",
       "types": "./dist/dereference/strategies/openapi-3-1/selectors/$anchor.d.ts"
     },
     "./dereference/strategies/openapi-3-1/selectors/uri": {
-      "import": "./dist/dereference/strategies/openapi-3-1/selectors/uri.mjs",
+      "import": "./dist/dereference/strategies/openapi-3-1/selectors/uri.js",
       "require": "./dist/dereference/strategies/openapi-3-1/selectors/uri.cjs",
       "types": "./dist/dereference/strategies/openapi-3-1/selectors/uri.d.ts"
     },
     "./bundle/strategies/openapi-3-1": {
-      "import": "./dist/bundle/strategies/openapi-3-1/index.mjs",
+      "import": "./dist/bundle/strategies/openapi-3-1/index.js",
       "require": "./dist/bundle/strategies/openapi-3-1/index.cjs",
       "types": "./dist/bundle/strategies/openapi-3-1/index.d.ts"
     }
@@ -214,21 +214,21 @@
   "imports": {
     "#buffer": {
       "node": {
-        "import": "./dist/util/polyfills/buffer/protocol-import.mjs",
+        "import": "./dist/util/polyfills/buffer/protocol-import.js",
         "require": "./dist/util/polyfills/buffer/standard-import.cjs"
       },
       "default": "./dist/util/polyfills/buffer/standard-import.cjs"
     },
     "#fs": {
       "node": {
-        "import": "./dist/util/polyfills/fs/protocol-import.mjs",
+        "import": "./dist/util/polyfills/fs/protocol-import.js",
         "require": "./dist/util/polyfills/fs/standard-import.cjs"
       },
       "default": "./dist/util/polyfills/fs/standard-import.cjs"
     },
     "#util": {
       "node": {
-        "import": "./dist/util/polyfills/util/protocol-import.mjs",
+        "import": "./dist/util/polyfills/util/protocol-import.js",
         "require": "./dist/util/polyfills/util/standard-import.cjs"
       },
       "default": "./dist/util/polyfills/util/standard-import.cjs"
@@ -305,7 +305,7 @@
     "tsup": "^8.4.0"
   },
   "files": [
-    "src/**/*.mjs",
+    "src/**/*.js",
     "src/**/*.cjs",
     "dist/",
     "types/",

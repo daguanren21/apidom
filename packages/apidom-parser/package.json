@@ -12,7 +12,7 @@
   "main": "./dist/parser.cjs",
   "exports": {
     "types": "./dist/apidom-parser.d.ts",
-    "import": "./dist/parser.mjs",
+    "import": "./dist/parser.js",
     "require": "./dist/parser.cjs"
   },
   "types": "./dist/apidom-parser.d.ts",

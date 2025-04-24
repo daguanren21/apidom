@@ -78,7 +78,7 @@
   },
   "types": "./dist/",
   "scripts": {
-    "build": "tsup && npm run build:umd:browser",
+    "build": "tsup && api-extractor run -l -c ./config/api-extractor/api-extractor.json && npm run build:umd:browser",
     "build:umd:browser": "cross-env BABEL_ENV=browser webpack --config config/webpack/browser.config.js",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix"
