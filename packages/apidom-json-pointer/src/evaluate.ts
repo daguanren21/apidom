@@ -44,6 +44,7 @@ const evaluate = <T extends Element>(pointer: string, element: T): Element => {
     }
 
     if (isArrayElement(acc)) {
+      // @ts-ignore
       if (!(token in acc.content) || !isInteger(Number(token))) {
         throw new EvaluationJsonPointerError(
           `JSON Pointer evaluation failed while evaluating token "${token}" against an ArrayElement`,

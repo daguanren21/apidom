@@ -18,81 +18,72 @@
   "homepage": "https://github.com/swagger-api/apidom#readme",
   "type": "module",
   "unpkg": "./dist/apidom-ls.browser.min.js",
-  "main": "./src/index.cjs",
+  "main": "./dist/index.cjs",
   "exports": {
     ".": {
-      "types": "./types/apidom-ls.d.ts",
-      "import": "./src/index.mjs",
-      "require": "./src/index.cjs"
+      "types": "./dist/apidom-ls.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     },
     "./services/validation/providers/json-schema": {
-      "import": "./srcservices/validation/providers/json-schema-validation-provider.mjs",
-      "require": "./src/services/validation/providers/json-schema-validation-provider.cjs",
-      "types": "./types/services/validation/providers/json-schema-validation-provider.d.ts"
+      "import": "./dist/services/validation/providers/json-schema-validation-provider.js",
+      "require": "./dist/services/validation/providers/json-schema-validation-provider.cjs",
+      "types": "./dist/services/validation/providers/json-schema-validation-provider.d.ts"
     },
     "./services/validation/providers/asyncapi-20-json-schema": {
-      "import": "./src/services/validation/providers/asyncapi-20-json-schema-validation-provider.mjs",
-      "require": "./src/services/validation/providers/asyncapi-20-json-schema-validation-provider.cjs",
-      "types": "./types/services/validation/providers/asyncapi-20-json-schema-validation-provider.d.ts"
+      "import": "./dist/services/validation/providers/asyncapi-20-json-schema-validation-provider.js",
+      "require": "./dist/services/validation/providers/asyncapi-20-json-schema-validation-provider.cjs",
+      "types": "./dist/services/validation/providers/asyncapi-20-json-schema-validation-provider.d.ts"
     },
     "./services/validation/providers/asyncapi-21-json-schema": {
-      "import": "./src/services/validation/providers/asyncapi-21-json-schema-validation-provider.mjs",
-      "require": "./src/services/validation/providers/asyncapi-21-json-schema-validation-provider.cjs",
-      "types": "./types/services/validation/providers/asyncapi-22-json-schema-validation-provider.d.ts"
+      "import": "./dist/services/validation/providers/asyncapi-21-json-schema-validation-provider.js",
+      "require": "./dist/services/validation/providers/asyncapi-21-json-schema-validation-provider.cjs",
+      "types": "./dist/services/validation/providers/asyncapi-22-json-schema-validation-provider.d.ts"
     },
     "./services/validation/providers/asyncapi-22-json-schema": {
-      "import": "./src/services/validation/providers/asyncapi-22-json-schema-validation-provider.mjs",
-      "require": "./src/services/validation/providers/asyncapi-22-json-schema-validation-provider.cjs",
-      "types": "./types/services/validation/providers/asyncapi-22-json-schema-validation-provider.d.ts"
+      "import": "./dist/services/validation/providers/asyncapi-22-json-schema-validation-provider.js",
+      "require": "./dist/services/validation/providers/asyncapi-22-json-schema-validation-provider.cjs",
+      "types": "./dist/services/validation/providers/asyncapi-22-json-schema-validation-provider.d.ts"
     },
     "./services/validation/providers/asyncapi-23-json-schema": {
-      "import": "./src/services/validation/providers/asyncapi-23-json-schema-validation-provider.mjs",
-      "require": "./src/services/validation/providers/asyncapi-23-json-schema-validation-provider.cjs",
-      "types": "./types/services/validation/providers/asyncapi-23-json-schema-validation-provider.d.ts"
+      "import": "./dist/services/validation/providers/asyncapi-23-json-schema-validation-provider.js",
+      "require": "./dist/services/validation/providers/asyncapi-23-json-schema-validation-provider.cjs",
+      "types": "./dist/services/validation/providers/asyncapi-23-json-schema-validation-provider.d.ts"
     },
     "./services/validation/providers/asyncapi-24-json-schema": {
-      "import": "./src/services/validation/providers/asyncapi-24-json-schema-validation-provider.mjs",
-      "require": "./src/services/validation/providers/asyncapi-24-json-schema-validation-provider.cjs",
-      "types": "./types/services/validation/providers/asyncapi-24-json-schema-validation-provider.d.ts"
+      "import": "./dist/services/validation/providers/asyncapi-24-json-schema-validation-provider.js",
+      "require": "./dist/services/validation/providers/asyncapi-24-json-schema-validation-provider.cjs",
+      "types": "./dist/services/validation/providers/asyncapi-24-json-schema-validation-provider.d.ts"
     },
     "./services/validation/providers/asyncapi-25-json-schema": {
-      "import": "./src/services/validation/providers/asyncapi-25-json-schema-validation-provider.mjs",
-      "require": "./src/services/validation/providers/asyncapi-25-json-schema-validation-provider.cjs",
-      "types": "./types/services/validation/providers/asyncapi-25-json-schema-validation-provider.d.ts"
+      "import": "./dist/services/validation/providers/asyncapi-25-json-schema-validation-provider.js",
+      "require": "./dist/services/validation/providers/asyncapi-25-json-schema-validation-provider.cjs",
+      "types": "./dist/services/validation/providers/asyncapi-25-json-schema-validation-provider.d.ts"
     },
     "./services/validation/providers/asyncapi-26-json-schema": {
-      "import": "./src/services/validation/providers/asyncapi-26-json-schema-validation-provider.mjs",
-      "require": "./src/services/validation/providers/asyncapi-26-json-schema-validation-provider.cjs",
-      "types": "./types/services/validation/providers/asyncapi-26-json-schema-validation-provider.d.ts"
+      "import": "./dist/services/validation/providers/asyncapi-26-json-schema-validation-provider.js",
+      "require": "./dist/services/validation/providers/asyncapi-26-json-schema-validation-provider.cjs",
+      "types": "./dist/services/validation/providers/asyncapi-26-json-schema-validation-provider.d.ts"
     },
     "./services/validation/providers/openapi-31-json-schema": {
-      "import": "./src/services/validation/providers/openapi-31-json-schema-validation-provider.mjs",
-      "require": "./src/services/validation/providers/openapi-31-json-schema-validation-provider.cjs",
-      "types": "./types/services/validation/providers/openapi-31-json-schema-validation-provider.d.ts"
+      "import": "./dist/services/validation/providers/openapi-31-json-schema-validation-provider.js",
+      "require": "./dist/services/validation/providers/openapi-31-json-schema-validation-provider.cjs",
+      "types": "./dist/services/validation/providers/openapi-31-json-schema-validation-provider.d.ts"
     },
     "./services/validation/providers/ads": {
-      "import": "./src/services/validation/providers/ads-validation-provider.mjs",
-      "require": "./src/services/validation/providers/ads-validation-provider.cjs",
-      "types": "./types/services/validation/providers/ads-validation-provider.d.ts"
+      "import": "./dist/services/validation/providers/ads-validation-provider.js",
+      "require": "./dist/services/validation/providers/ads-validation-provider.cjs",
+      "types": "./dist/services/validation/providers/ads-validation-provider.d.ts"
     }
   },
-  "types": "./types/",
+  "types": "./dist/",
   "scripts": {
-    "build": "npm run clean && run-p typescript:declaration build:es build:cjs build:umd:browser",
-    "build:es": "cross-env BABEL_ENV=es babel src --out-dir src --extensions '.ts' --out-file-extension '.mjs' --root-mode 'upward'",
-    "build:cjs": "cross-env BABEL_ENV=cjs babel src --out-dir src --extensions '.ts' --out-file-extension '.cjs' --root-mode 'upward'",
+    "build": "tsup && npm run build:umd:browser",
     "build:umd:browser": "cross-env BABEL_ENV=browser webpack --config config/webpack/browser.config.js",
     "lint": "eslint ./",
-    "lint:fix": "eslint ./ --fix",
-    "clean": "rimraf --glob 'src/**/*.mjs' 'src/**/*.cjs' 'test/**/*.mjs' ./dist ./types",
-    "test": "npm run build:es && cross-env BABEL_ENV=es babel test --out-dir test --extensions '.ts' --out-file-extension '.mjs' --root-mode 'upward' && cross-env NODE_ENV=test mocha",
-    "typescript:check-types": "tsc --noEmit",
-    "typescript:declaration": "tsc -p tsconfig.declaration.json && api-extractor run -l -c ./config/api-extractor/api-extractor.json",
-    "prepack": "copyfiles -u 3 ../../LICENSES/* LICENSES && copyfiles -u 2 ../../NOTICE .",
-    "postpack": "rimraf NOTICE LICENSES"
+    "lint:fix": "eslint ./ --fix"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.26.10",
     "@swagger-api/apidom-core": "^1.0.0-beta.30",
     "@swagger-api/apidom-json-path": "^1.0.0-beta.30",
     "@swagger-api/apidom-json-pointer": "^1.0.0-beta.30",
@@ -114,11 +105,15 @@
     "@swagger-api/apidom-parser-adapter-openapi-yaml-3-0": "^1.0.0-beta.30",
     "@swagger-api/apidom-parser-adapter-openapi-yaml-3-1": "^1.0.0-beta.30",
     "@swagger-api/apidom-parser-adapter-yaml-1-2": "^1.0.0-beta.30",
-    "@swagger-api/apidom-reference": "^1.0.0-beta.30",
+    "@swagger-api/apidom-reference": "^1.0.0-beta.30"
+  },
+  "devDependencies": {
+    "@babel/runtime-corejs3": "^7.26.10",
     "@types/ramda": "~0.30.0",
     "openapi-path-templating": "^2.0.1",
     "ramda": "~0.30.0",
     "ramda-adjunct": "^5.0.0",
+    "tsup": "^8.4.0",
     "vscode-languageserver-protocol": "^3.17.2",
     "vscode-languageserver-textdocument": "^1.0.5",
     "vscode-languageserver-types": "^3.17.2"

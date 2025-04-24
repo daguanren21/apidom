@@ -16,10 +16,6 @@
     // Import non-ES modules as default imports.
     "esModuleInterop": true,
     "typeRoots": ["./node_modules/@types"],
-    "types": [
-      "node",
-      "mocha"
-    ]
   },
   "exclude": [
     "node_modules"

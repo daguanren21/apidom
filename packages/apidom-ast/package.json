@@ -9,19 +9,19 @@
   "type": "module",
   "sideEffects": false,
   "unpkg": "./dist/apidom.ast.min.js",
-  "main": "./src/index.cjs",
+  "main": "./dist/index.cjs",
   "exports": {
-    "types": "./types/apidom-ast.d.ts",
-    "import": "./src/index.mjs",
-    "require": "./src/index.cjs"
+    "types": "./dist/apidom-ast.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
   },
-  "types": "./types/apidom-ast.d.ts",
+  "types": "./dist/apidom-ast.d.ts",
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && api-extractor run -l -c ./config/api-extractor/api-extractor.json && npm run build:umd:browser",
     "build:umd:browser": "cross-env BABEL_ENV=browser webpack --config config/webpack/browser.config.js --progress",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
-    "clean": "rimraf --glob 'src/**/*.mjs' 'src/**/*.cjs' 'test/**/*.mjs' ./dist ./types",
+    "clean": "rimraf --glob 'src/**/*.mjs' 'src/**/*.cjs' 'test/**/*.mjs' ./dist ./types"
   },
   "repository": {
     "type": "git",
@@ -38,9 +38,11 @@
   },
   "devDependencies": {
     "@babel/runtime-corejs3": "^7.26.10",
+    "@swc/core": "^1.11.21",
     "@types/ramda": "~0.30.0",
     "ramda": "~0.30.0",
     "ramda-adjunct": "^5.0.0",
+    "tsup": "^8.4.0",
     "unraw": "^3.0.0"
   },
   "files": [
