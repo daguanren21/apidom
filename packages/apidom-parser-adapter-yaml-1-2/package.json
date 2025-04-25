@@ -26,8 +26,8 @@
   },
   "types": "./dist/apidom-parser-adapter-yaml-1-2.d.ts",
   "scripts": {
-    "build": "npm run build:wasm && npm run build:wasm:copy && tsup && api-extractor run -l -c ./config/api-extractor/api-extractor.json && npm run build:umd:browser",
-    "build:umd:browser": "cross-env BABEL_ENV=browser webpack --config config/webpack/browser.config.js --progress",
+    "build": "tsup && api-extractor run -l -c ./config/api-extractor/api-extractor.json && npm run build:umd:browser",
+    "build:umd:browser": "npm run build:wasm && npm run build:wasm:copy && cross-env BABEL_ENV=browser webpack --config config/webpack/browser.config.js --progress",
     "build:wasm": "node ../../scripts/file-exists.js ../../node_modules/@tree-sitter-grammars/tree-sitter-yaml/tree-sitter-yaml.wasm && exit 0 || cd ../../node_modules/@tree-sitter-grammars/tree-sitter-yaml && tree-sitter generate ./grammar.js && tree-sitter build --wasm && node-gyp rebuild",
     "build:wasm:copy": "copyfiles -u 5 ../../node_modules/@tree-sitter-grammars/tree-sitter-yaml/tree-sitter-yaml.wasm wasm",
     "lint": "eslint ./",
@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@babel/runtime-corejs3": "^7.26.10",
+    "@swc/wasm": "^1.11.22",
     "@tree-sitter-grammars/tree-sitter-yaml": "=0.7.0",
     "@types/ramda": "~0.30.0",
     "esbuild-plugin-wasm": "^1.1.0",

@@ -1,6 +1,7 @@
 {
   "name": "@swagger-api/apidom-parser-adapter-json",
   "version": "1.0.0-beta.30",
+  "packageManager": "npm@8.19.2",
   "description": "Parser adapter for parsing JSON documents into base namespace.",
   "publishConfig": {
     "access": "public",
@@ -26,11 +27,12 @@
   },
   "types": "./dist/apidom-parser-adapter-json.d.ts",
   "scripts": {
-    "build": "npm run build:wasm && npm run build:wasm:copy && tsup && api-extractor run -l -c ./config/api-extractor/api-extractor.json && npm run build:umd:browser",
-    "build:umd:browser": "cross-env BABEL_ENV=browser webpack --config config/webpack/browser.config.js --progress",
+    "build": "npm run build:wasm && npm run build:wasm:copy && unbuild && npm run build:umd:browser",
+    "build:umd:browser": "npm run build:wasm && npm run build:wasm:copy && cross-env BABEL_ENV=browser webpack --config config/webpack/browser.config.js --progress",
     "build:wasm": "node ../../scripts/file-exists.js ../../node_modules/tree-sitter-json/tree-sitter-json.wasm && exit 0 || cd ../../node_modules/tree-sitter-json && tree-sitter generate ./grammar.js && tree-sitter build --wasm && node-gyp rebuild",
     "build:wasm:copy": "copyfiles -u 4 ../../node_modules/tree-sitter-json/tree-sitter-json.wasm wasm",
     "lint": "eslint ./",
+    "patch": "patch-package",
     "lint:fix": "eslint ./ --fix"
   },
   "repository": {
@@ -46,6 +48,8 @@
   },
   "devDependencies": {
     "@babel/runtime-corejs3": "^7.26.10",
+    "@rollup/plugin-wasm": "^6.2.2",
+    "@swc/wasm": "^1.11.22",
     "@types/ramda": "~0.30.0",
     "ramda": "~0.30.0",
     "ramda-adjunct": "^5.0.0",
@@ -53,6 +57,7 @@
     "tree-sitter-cli": "=0.24.5",
     "tree-sitter-json": "=0.24.8",
     "tsup": "^8.4.0",
+    "unbuild": "^3.5.0",
     "web-tree-sitter": "=0.24.5"
   },
   "files": [

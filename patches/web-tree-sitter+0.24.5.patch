@@ -1,0 +1,11 @@
+diff --git a/node_modules/web-tree-sitter/tree-sitter-web.d.ts b/node_modules/web-tree-sitter/tree-sitter-web.d.ts
+index cfd8a10..fbc85fc 100644
+--- a/node_modules/web-tree-sitter/tree-sitter-web.d.ts
++++ b/node_modules/web-tree-sitter/tree-sitter-web.d.ts
+@@ -238,5 +238,5 @@ declare module 'web-tree-sitter' {
+     }
+   }
+ 
+-  export = Parser
++  export default Parser
+ }
