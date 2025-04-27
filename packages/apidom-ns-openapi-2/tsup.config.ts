@@ -9,6 +9,6 @@ export default defineConfig({
   minify: true,
   splitting: false,
   treeshake: true,
-   tsconfig: 'tsconfig.declaration.json',
- target: 'es5',
+  tsconfig: 'tsconfig.declaration.json',
+  target: 'es5',
 })

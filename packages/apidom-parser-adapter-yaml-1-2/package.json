@@ -16,17 +16,17 @@
   "exports": {
     "types": "./dist/apidom-parser-adapter-yaml-1-2.d.ts",
     "node": {
-      "import": "./dist/adapter-node.js",
+      "import": "./dist/adapter-node.mjs",
       "require": "./dist/adapter-node.cjs"
     },
     "browser": {
-      "import": "./dist/adapter-browser.js"
+      "import": "./dist/adapter-browser.mjs"
     },
     "default": "./dist/adapter-node.cjs"
   },
   "types": "./dist/apidom-parser-adapter-yaml-1-2.d.ts",
   "scripts": {
-    "build": "tsup && api-extractor run -l -c ./config/api-extractor/api-extractor.json && npm run build:umd:browser",
+    "build": "npm run build:wasm && npm run build:wasm:copy && unbuild && api-extractor run -l -c ./config/api-extractor/api-extractor.json && npm run build:umd:browser",
     "build:umd:browser": "npm run build:wasm && npm run build:wasm:copy && cross-env BABEL_ENV=browser webpack --config config/webpack/browser.config.js --progress",
     "build:wasm": "node ../../scripts/file-exists.js ../../node_modules/@tree-sitter-grammars/tree-sitter-yaml/tree-sitter-yaml.wasm && exit 0 || cd ../../node_modules/@tree-sitter-grammars/tree-sitter-yaml && tree-sitter generate ./grammar.js && tree-sitter build --wasm && node-gyp rebuild",
     "build:wasm:copy": "copyfiles -u 5 ../../node_modules/@tree-sitter-grammars/tree-sitter-yaml/tree-sitter-yaml.wasm wasm",
@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@babel/runtime-corejs3": "^7.26.10",
+    "@rollup/plugin-wasm": "^6.2.2",
     "@swc/wasm": "^1.11.22",
     "@tree-sitter-grammars/tree-sitter-yaml": "=0.7.0",
     "@types/ramda": "~0.30.0",
@@ -55,6 +56,7 @@
     "tree-sitter": "=0.22.1",
     "tree-sitter-cli": "=0.24.5",
     "tsup": "^8.4.0",
+    "unbuild": "^3.5.0",
     "web-tree-sitter": "=0.24.5"
   },
   "files": [

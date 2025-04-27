@@ -17,11 +17,11 @@
   "exports": {
     "types": "./dist/apidom-parser-adapter-json.d.ts",
     "node": {
-      "import": "./dist/adapter-node.js",
+      "import": "./dist/adapter-node.mjs",
       "require": "./dist/adapter-node.cjs"
     },
     "browser": {
-      "import": "./dist/adapter-browser.js"
+      "import": "./dist/adapter-browser.mjs"
     },
     "default": "./dist/adapter-node.cjs"
   },
