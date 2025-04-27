@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "types": ["node"],
     "paths": {
       "#buffer": ["./src/util/polyfills/buffer/protocol-import.ts"],
       "#fs": ["./src/util/polyfills/fs/protocol-import.ts"],
