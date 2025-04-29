@@ -27,7 +27,7 @@ const browser = {
       "http": false,
       "https": false,
       "util": false,
-      "url": require.resolve("url/"),
+      "url": false,
       'buffer': require.resolve('buffer/'),
       "os": false ,
       "stream": false,
