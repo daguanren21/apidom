@@ -1,6 +1,7 @@
 import path from 'node:path';
 import { nonMinimizeTrait, minimizeTrait } from './traits.config.js';
-
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 const browser = {
   mode: 'production',
   entry: ['./src/index.ts'],
@@ -18,9 +19,20 @@ const browser = {
   resolve: {
     extensions: ['.ts', '.mjs', '.js', '.json'],
     fallback: {
-      fs: false,
-      path: false,
-    },
+      "fs": false,
+      "tls": false,
+      "net": false,
+      "path": false,
+      "zlib": false,
+      "http": false,
+      "https": false,
+      "util": false,
+      "url": require.resolve("url/"),
+      'buffer': require.resolve('buffer/'),
+      "os": false ,
+      "stream": false,
+      "crypto": false
+    }
   },
   module: {
     rules: [
@@ -58,9 +70,20 @@ const browserMin = {
   resolve: {
     extensions: ['.ts', '.mjs', '.js', '.json'],
     fallback: {
-      fs: false,
-      path: false,
-    },
+      "fs": false,
+      "tls": false,
+      "net": false,
+      "path": false,
+      "zlib": false,
+      "http": false,
+      "https": false,
+      "util": false,
+      "url": false,
+      'buffer': require.resolve('buffer/'),
+      "os": false ,
+      "stream": false,
+      "crypto": false
+    }
   },
   module: {
     rules: [
